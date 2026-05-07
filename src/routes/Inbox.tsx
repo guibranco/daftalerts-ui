@@ -150,7 +150,7 @@ export default function Inbox() {
                   property={property} 
                   onApprove={handleApprove}
                   onRecycle={handleRecycle}
-                  view={filters.view}
+                  view={filters.view as 'grid' | 'list'}
                 />
               </motion.div>
             ))}

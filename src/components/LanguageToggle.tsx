@@ -17,10 +17,8 @@ export function LanguageToggle() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" title={t('common.language')}>
-          <Globe className="h-5 w-5" />
-        </Button>
+      <DropdownMenuTrigger render={<Button variant="ghost" size="icon" title={t('common.language')} />}>
+        <Globe className="h-5 w-5" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setLanguage('en')}>

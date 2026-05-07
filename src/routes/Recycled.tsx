@@ -37,11 +37,9 @@ export default function Recycled() {
          <h1 className="text-3xl font-bold tracking-tight">{t('nav.recycled')}</h1>
          
          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="destructive" size="sm" className="gap-2">
-                <Trash2 className="w-4 h-4" />
-                Empty Recycle Bin
-              </Button>
+            <DialogTrigger render={<Button variant="destructive" size="sm" className="gap-2" />}>
+              <Trash2 className="w-4 h-4" />
+              Empty Recycle Bin
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>

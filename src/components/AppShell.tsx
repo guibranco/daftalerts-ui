@@ -104,10 +104,8 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
         <header className="h-16 border-b bg-card flex items-center justify-between px-4 gap-4 sticky top-0 z-30">
           <div className="flex items-center gap-4 flex-1">
             <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="w-6 h-6" />
-                </Button>
+              <SheetTrigger render={<Button variant="ghost" size="icon" className="md:hidden" />}>
+                <Menu className="w-6 h-6" />
               </SheetTrigger>
               <SheetContent side="left" className="w-64 p-0">
                 <div className="p-4 border-b flex items-center gap-2">

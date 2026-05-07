@@ -45,8 +45,8 @@ export function MapView({ properties }: MapViewProps) {
                   <h4 className="font-bold text-sm leading-tight mb-1">{selectedProp.address}</h4>
                   <div className="font-bold text-primary text-base mb-2">{formatPrice(selectedProp.priceMonthly)}</div>
                   <div className="flex gap-2">
-                    <Button asChild size="sm" variant="outline" className="flex-1 h-8 text-[11px]">
-                      <a href={selectedProp.daftUrl} target="_blank" rel="noopener noreferrer">Daft <ExternalLink className="w-3 h-3 ml-1"/></a>
+                    <Button render={<a href={selectedProp.daftUrl} target="_blank" rel="noopener noreferrer" />} size="sm" variant="outline" className="flex-1 h-8 text-[11px]">
+                      Daft <ExternalLink className="w-3 h-3 ml-1"/>
                     </Button>
                     <Link to={`/property/${selectedProp.id}`} state={{ backgroundLocation: window.location }} className="flex-1">
                        <Button size="sm" className="w-full h-8 text-[11px]">{t('property.viewDetails')}</Button>

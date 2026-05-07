@@ -64,16 +64,14 @@ export function FilterSheet() {
 
   return (
     <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline" size="sm" className="gap-2">
-          <Filter className="w-4 h-4" />
-          {t('inbox.editFilters')}
-          {localFilters.routingKeys.length > 0 && (
-             <Badge variant="secondary" className="ml-1 h-5 px-1 min-w-5 justify-center">
-                {localFilters.routingKeys.length}
-             </Badge>
-          )}
-        </Button>
+      <SheetTrigger render={<Button variant="outline" size="sm" className="gap-2" />}>
+        <Filter className="w-4 h-4" />
+        {t('inbox.editFilters')}
+        {localFilters.routingKeys.length > 0 && (
+           <Badge variant="secondary" className="ml-1 h-5 px-1 min-w-5 justify-center">
+              {localFilters.routingKeys.length}
+           </Badge>
+        )}
       </SheetTrigger>
       <SheetContent className="w-full sm:max-w-md overflow-y-auto flex flex-col h-full p-0">
         <SheetHeader className="p-6 border-b">
@@ -140,7 +138,13 @@ export function FilterSheet() {
                max={5000} 
                min={500} 
                step={50}
-               onValueChange={(val: number[]) => setLocalFilters({ ...localFilters, minPrice: val[0], maxPrice: val[1] })}
+               onValueChange={(val: number | readonly number[]) => {
+                if (typeof val === 'number') {
+                  setLocalFilters({ ...localFilters, minPrice: val, maxPrice: null });
+                } else {
+                  setLocalFilters({ ...localFilters, minPrice: val[0], maxPrice: val[1] });
+                }
+               }}
              />
           </div>
 

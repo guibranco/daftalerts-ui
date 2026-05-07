@@ -174,13 +174,11 @@ export function PropertyDetail() {
 
                 <div className="flex flex-col gap-3">
                   <Button 
-                    asChild 
+                    render={<a href={property.daftUrl} target="_blank" rel="noopener noreferrer" />} 
                     className="w-full bg-primary hover:bg-primary-dark shadow-sm py-6 rounded-xl font-bold"
                   >
-                    <a href={property.daftUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-5 h-5 mr-3" />
-                      {t('property.openOnDaft')}
-                    </a>
+                    <ExternalLink className="w-5 h-5 mr-3" />
+                    {t('property.openOnDaft')}
                   </Button>
 
                   <div className="grid grid-cols-2 gap-2">
