@@ -8,12 +8,14 @@ import { Trash2, Edit, Plus, Star } from 'lucide-react';
 import { ThemeToggle } from '../components/ThemeToggle';
 import { LanguageToggle } from '../components/LanguageToggle';
 import { useMapsKey } from '../hooks/useMapsKey';
-import { Key } from 'lucide-react';
+import { useApiConfig } from '../hooks/useApiConfig';
+import { Key, Server, Database, ShieldCheck } from 'lucide-react';
 
 export default function Settings() {
   const { t } = useTranslation();
   const { query: presetsQuery, deleteMutation } = usePresets();
-  const { apiKey, clearApiKey } = useMapsKey();
+  const { apiKey, clearApiKey, setIsModalOpen: setMapsModalOpen } = useMapsKey();
+  const { config, clearConfig, isMock, setIsModalOpen: setApiModalOpen } = useApiConfig();
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
@@ -105,7 +107,8 @@ export default function Settings() {
               Manage external service keys used by the application.
             </CardDescription>
           </CardHeader>
-          <CardContent>
+          <CardContent className="space-y-4">
+            {/* Google Maps Key */}
             <div className="flex items-center justify-between p-4 border rounded-lg bg-muted/30">
               <div className="space-y-1">
                 <p className="font-medium">Google Maps API Key</p>
@@ -117,7 +120,7 @@ export default function Settings() {
                  <Button 
                    variant="outline" 
                    size="sm"
-                   onClick={() => window.location.reload()}
+                   onClick={() => setMapsModalOpen(true)}
                  >
                    Reconfigure
                  </Button>
@@ -128,6 +131,42 @@ export default function Settings() {
                      onClick={() => {
                         if (confirm('Are you sure you want to clear the Google Maps API Key? The map feature will stop working.')) {
                           clearApiKey();
+                        }
+                     }}
+                   >
+                     Clear
+                   </Button>
+                 )}
+              </div>
+            </div>
+
+            {/* Daft API Config */}
+            <div className="flex items-center justify-between p-4 border rounded-lg bg-muted/30">
+              <div className="space-y-1">
+                <p className="font-medium flex items-center gap-2">
+                   Daft Alerts API
+                   {isMock && <Badge variant="secondary" className="font-normal">Mock Mode</Badge>}
+                </p>
+                <div className="text-xs text-muted-foreground space-y-0.5">
+                  <p className="flex items-center gap-1"><Database className="w-3 h-3"/> {config.baseUrl || 'Using mock base URL'}</p>
+                  <p className="flex items-center gap-1"><ShieldCheck className="w-3 h-3"/> {config.token ? '••••••••••••' : 'Using mock token'}</p>
+                </div>
+              </div>
+              <div className="flex gap-2">
+                 <Button 
+                   variant="outline" 
+                   size="sm"
+                   onClick={() => setApiModalOpen(true)}
+                 >
+                   Reconfigure
+                 </Button>
+                 {!isMock && (
+                   <Button 
+                     variant="destructive" 
+                     size="sm" 
+                     onClick={() => {
+                        if (confirm('Are you sure you want to clear the API configuration? The app will fallback to mock data.')) {
+                          clearConfig();
                         }
                      }}
                    >

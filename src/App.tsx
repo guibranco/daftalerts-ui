@@ -11,6 +11,8 @@ import { TooltipProvider } from './components/ui/tooltip';
 
 import { MapsKeyProvider, useMapsKey } from './hooks/useMapsKey';
 import { MapsKeyModal } from './components/MapsKeyModal';
+import { ApiConfigProvider } from './hooks/useApiConfig';
+import { ApiConfigModal } from './components/ApiConfigModal';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -50,15 +52,18 @@ function AppRoutes() {
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <MapsKeyProvider>
-        <TooltipProvider>
-          <BrowserRouter basename={import.meta.env.BASE_URL}>
-            <AppRoutes />
-            <MapsKeyModal />
-            <Toaster position="bottom-right" />
-          </BrowserRouter>
-        </TooltipProvider>
-      </MapsKeyProvider>
+      <ApiConfigProvider>
+        <MapsKeyProvider>
+          <TooltipProvider>
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
+              <AppRoutes />
+              <MapsKeyModal />
+              <ApiConfigModal />
+              <Toaster position="bottom-right" />
+            </BrowserRouter>
+          </TooltipProvider>
+        </MapsKeyProvider>
+      </ApiConfigProvider>
     </QueryClientProvider>
   );
 }

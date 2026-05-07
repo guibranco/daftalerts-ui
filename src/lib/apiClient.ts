@@ -4,9 +4,11 @@ import { FilterPreset } from '../types/preset';
 import { PropertyListResponseSchema, PropertySchema, StatsSchema, FilterPresetSchema } from './schemas';
 import { mockProperties, mockPresets } from './mockData';
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL;
-const TOKEN = import.meta.env.VITE_API_TOKEN;
-const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
+const getApiConfig = () => {
+  const baseUrl = localStorage.getItem('daft_api_base_url');
+  const token = localStorage.getItem('daft_api_token');
+  return { baseUrl, token };
+};
 
 export class ApiError extends Error {
   constructor(public status: number, message: string) {
@@ -16,14 +18,17 @@ export class ApiError extends Error {
 }
 
 async function request<T>(path: string, options: RequestInit = {}, schema?: any): Promise<T> {
-  if (USE_MOCK) {
+  const { baseUrl, token } = getApiConfig();
+  const isMock = !baseUrl || !token;
+
+  if (isMock) {
     return handleMockRequest<T>(path, options);
   }
 
-  const url = `${BASE_URL}${path}`;
+  const url = `${baseUrl}${path}`;
   const headers = {
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${TOKEN}`,
+    'Authorization': `Bearer ${token}`,
     ...options.headers,
   };
 

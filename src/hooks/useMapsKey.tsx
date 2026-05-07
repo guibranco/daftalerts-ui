@@ -4,6 +4,8 @@ interface MapsKeyContextType {
   apiKey: string | null;
   setApiKey: (key: string) => void;
   clearApiKey: () => void;
+  isModalOpen: boolean;
+  setIsModalOpen: (open: boolean) => void;
 }
 
 const MapsKeyContext = createContext<MapsKeyContextType | undefined>(undefined);
@@ -12,6 +14,8 @@ export function MapsKeyProvider({ children }: { children: React.ReactNode }) {
   const [apiKey, setApiKeyInternal] = useState<string | null>(() => {
     return localStorage.getItem('google_maps_api_key');
   });
+
+  const [isModalOpen, setIsModalOpen] = useState(!apiKey);
 
   const setApiKey = (key: string) => {
     localStorage.setItem('google_maps_api_key', key);
@@ -24,7 +28,7 @@ export function MapsKeyProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <MapsKeyContext.Provider value={{ apiKey, setApiKey, clearApiKey }}>
+    <MapsKeyContext.Provider value={{ apiKey, setApiKey, clearApiKey, isModalOpen, setIsModalOpen }}>
       {children}
     </MapsKeyContext.Provider>
   );

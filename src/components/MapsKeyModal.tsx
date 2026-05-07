@@ -15,9 +15,8 @@ import { Key } from 'lucide-react';
 
 export function MapsKeyModal() {
   const { t } = useTranslation();
-  const { apiKey, setApiKey } = useMapsKey();
+  const { apiKey, setApiKey, isModalOpen: isOpen, setIsModalOpen: setIsOpen } = useMapsKey();
   const [inputValue, setInputValue] = useState('');
-  const [isOpen, setIsOpen] = useState(!apiKey);
 
   // Close modal only if apiKey exists
   const handleSave = () => {
@@ -33,6 +32,13 @@ export function MapsKeyModal() {
       setIsOpen(true);
     }
   }, [apiKey]);
+
+  // Sync input when modal opens
+  React.useEffect(() => {
+    if (isOpen) {
+      setInputValue(apiKey || '');
+    }
+  }, [isOpen, apiKey]);
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => {
