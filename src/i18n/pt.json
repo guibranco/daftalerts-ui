@@ -1,0 +1,71 @@
+{
+  "common": {
+    "search": "Pesquisar...",
+    "refresh": "Atualizar",
+    "settings": "Configurações",
+    "theme": "Tema",
+    "language": "Idioma",
+    "en": "Inglês",
+    "pt": "Português",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "restore": "Restaurar",
+    "approve": "Aprovar",
+    "recycle": "Reciclar",
+    "loading": "Carregando...",
+    "error": "Erro",
+    "undo": "Desfazer"
+  },
+  "nav": {
+    "inbox": "Entrada",
+    "approved": "Aprovados",
+    "recycled": "Reciclados",
+    "settings": "Configurações"
+  },
+  "inbox": {
+    "title": "Entrada",
+    "empty": "Sua caixa de entrada está limpa. Novos alertas aparecerão aqui automaticamente.",
+    "editFilters": "Editar filtros",
+    "preset": "Carregar preset",
+    "savePreset": "Salvar como preset",
+    "clearFilters": "Limpar filtros",
+    "movedToApproved": "Movido para Aprovados",
+    "movedToRecycled": "Movido para Reciclados",
+    "gridView": "Grade",
+    "listView": "Lista"
+  },
+  "filters": {
+    "routingKeys": "Códigos Postais",
+    "priceRange": "Faixa de Preço",
+    "beds": "Quartos",
+    "baths": "Banheiros",
+    "propType": "Tipo de Imóvel",
+    "berMin": "BER Mínimo",
+    "any": "Qualquer",
+    "apply": "Aplicar Filtros",
+    "reset": "Redefinir",
+    "selectAll": "Selecionar toda Dublin"
+  },
+  "property": {
+    "viewDetails": "Ver detalhes",
+    "openOnDaft": "Abrir no Daft.ie",
+    "copyEircode": "Copiar Eircode",
+    "notes": "Notas privadas",
+    "notesPlaceholder": "Adicione suas notas aqui...",
+    "saved": "Salvo",
+    "received": "Recebido há {{time}}",
+    "beds": "Quartos",
+    "baths": "Banheiros",
+    "type": "Tipo",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "Presets de Filtro",
+    "newPreset": "Novo Preset",
+    "default": "Padrão",
+    "deleteConfirm": "Tem certeza que deseja excluir este preset?",
+    "theme": "Aparência",
+    "language": "Preferência de Idioma"
+  }
+}

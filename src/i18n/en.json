@@ -1,0 +1,71 @@
+{
+  "common": {
+    "search": "Search...",
+    "refresh": "Refresh",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "en": "English",
+    "pt": "Portuguese",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "restore": "Restore",
+    "approve": "Approve",
+    "recycle": "Recycle",
+    "loading": "Loading...",
+    "error": "Error",
+    "undo": "Undo"
+  },
+  "nav": {
+    "inbox": "Inbox",
+    "approved": "Approved",
+    "recycled": "Recycled",
+    "settings": "Settings"
+  },
+  "inbox": {
+    "title": "Inbox",
+    "empty": "Your inbox is clear. New alerts will appear here automatically.",
+    "editFilters": "Edit filters",
+    "preset": "Load preset",
+    "savePreset": "Save current as preset",
+    "clearFilters": "Clear filters",
+    "movedToApproved": "Moved to Approved",
+    "movedToRecycled": "Moved to Recycled",
+    "gridView": "Grid View",
+    "listView": "List View"
+  },
+  "filters": {
+    "routingKeys": "Routing Keys",
+    "priceRange": "Price Range",
+    "beds": "Beds",
+    "baths": "Baths",
+    "propType": "Property Type",
+    "berMin": "Min BER",
+    "any": "Any",
+    "apply": "Apply Filters",
+    "reset": "Reset",
+    "selectAll": "Select all Dublin"
+  },
+  "property": {
+    "viewDetails": "View details",
+    "openOnDaft": "Open on Daft.ie",
+    "copyEircode": "Copy Eircode",
+    "notes": "Private notes",
+    "notesPlaceholder": "Add your notes here...",
+    "saved": "Saved",
+    "received": "Received {{time}}",
+    "beds": "Beds",
+    "baths": "Baths",
+    "type": "Type",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "Filter Presets",
+    "newPreset": "New Preset",
+    "default": "Default",
+    "deleteConfirm": "Are you sure you want to delete this preset?",
+    "theme": "Appearance",
+    "language": "Language Preference"
+  }
+}
