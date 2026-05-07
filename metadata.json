@@ -1,5 +1,5 @@
 {
-  "name": "DaftAlerts",
+  "name": "DaftAlerts UI",
   "description": "Your Daft.ie inbox, organized.",
   "requestFramePermissions": ["geolocation"],
   "majorCapabilities": []

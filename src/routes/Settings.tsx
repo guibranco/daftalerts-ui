@@ -7,10 +7,13 @@ import { Badge } from '../components/ui/badge';
 import { Trash2, Edit, Plus, Star } from 'lucide-react';
 import { ThemeToggle } from '../components/ThemeToggle';
 import { LanguageToggle } from '../components/LanguageToggle';
+import { useMapsKey } from '../hooks/useMapsKey';
+import { Key } from 'lucide-react';
 
 export default function Settings() {
   const { t } = useTranslation();
   const { query: presetsQuery, deleteMutation } = usePresets();
+  const { apiKey, clearApiKey } = useMapsKey();
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
@@ -89,6 +92,50 @@ export default function Settings() {
           </CardHeader>
           <CardContent>
             <LanguageToggle />
+          </CardContent>
+        </Card>
+
+        <Card className="md:col-span-2">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Key className="w-5 h-5" />
+              API Keys
+            </CardTitle>
+            <CardDescription>
+              Manage external service keys used by the application.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="flex items-center justify-between p-4 border rounded-lg bg-muted/30">
+              <div className="space-y-1">
+                <p className="font-medium">Google Maps API Key</p>
+                <p className="text-sm text-muted-foreground font-mono">
+                  {apiKey ? `${apiKey.substring(0, 8)}...${apiKey.substring(apiKey.length - 4)}` : 'No key set'}
+                </p>
+              </div>
+              <div className="flex gap-2">
+                 <Button 
+                   variant="outline" 
+                   size="sm"
+                   onClick={() => window.location.reload()}
+                 >
+                   Reconfigure
+                 </Button>
+                 {apiKey && (
+                   <Button 
+                     variant="destructive" 
+                     size="sm" 
+                     onClick={() => {
+                        if (confirm('Are you sure you want to clear the Google Maps API Key? The map feature will stop working.')) {
+                          clearApiKey();
+                        }
+                     }}
+                   >
+                     Clear
+                   </Button>
+                 )}
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>

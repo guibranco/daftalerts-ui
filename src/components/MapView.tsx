@@ -9,21 +9,22 @@ import { ExternalLink, Eye, Map as MapIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import { useMapsKey } from '../hooks/useMapsKey';
+
 interface MapViewProps {
   properties: Property[];
 }
 
-const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-
 export function MapView({ properties }: MapViewProps) {
   const { t } = useTranslation();
+  const { apiKey } = useMapsKey();
   const [selectedPropId, setSelectedPropId] = useState<string | null>(null);
   const selectedProp = properties.find(p => p.id === selectedPropId);
 
   return (
     <div className="w-full h-full relative rounded-xl overflow-hidden border shadow-sm">
-      {GOOGLE_MAPS_API_KEY ? (
-        <APIProvider apiKey={GOOGLE_MAPS_API_KEY}>
+      {apiKey ? (
+        <APIProvider apiKey={apiKey}>
           <Map
             defaultCenter={{ lat: 53.3498, lng: -6.2603 }}
             defaultZoom={12}
@@ -61,7 +62,9 @@ export function MapView({ properties }: MapViewProps) {
         <div className="w-full h-full bg-muted flex flex-col items-center justify-center p-8 text-center space-y-4">
           <MapIcon className="w-12 h-12 text-muted-foreground opacity-20" />
           <p className="text-muted-foreground font-medium">Google Maps API key missing.</p>
-          <code className="text-[10px] bg-background p-2 rounded border">VITE_GOOGLE_MAPS_API_KEY</code>
+          <Button variant="outline" size="sm" onClick={() => window.location.reload()}>
+            Provide API Key
+          </Button>
         </div>
       )}
     </div>

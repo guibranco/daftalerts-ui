@@ -9,6 +9,9 @@ import Settings from './routes/Settings';
 import { PropertyDetail } from './components/PropertyDetail';
 import { TooltipProvider } from './components/ui/tooltip';
 
+import { MapsKeyProvider, useMapsKey } from './hooks/useMapsKey';
+import { MapsKeyModal } from './components/MapsKeyModal';
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -47,12 +50,15 @@ function AppRoutes() {
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <BrowserRouter basename={import.meta.env.BASE_URL}>
-          <AppRoutes />
-          <Toaster position="bottom-right" />
-        </BrowserRouter>
-      </TooltipProvider>
+      <MapsKeyProvider>
+        <TooltipProvider>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
+            <AppRoutes />
+            <MapsKeyModal />
+            <Toaster position="bottom-right" />
+          </BrowserRouter>
+        </TooltipProvider>
+      </MapsKeyProvider>
     </QueryClientProvider>
   );
 }
