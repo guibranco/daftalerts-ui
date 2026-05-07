@@ -47,8 +47,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          VITE_BASE_URL: /daftalerts-ui/
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v7

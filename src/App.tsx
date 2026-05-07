@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'sonner';
 import { AppShell } from './components/AppShell';
@@ -55,12 +55,12 @@ export default function App() {
       <ApiConfigProvider>
         <MapsKeyProvider>
           <TooltipProvider>
-            <BrowserRouter basename={import.meta.env.BASE_URL}>
+            <HashRouter>
               <AppRoutes />
               <MapsKeyModal />
               <ApiConfigModal />
               <Toaster position="bottom-right" />
-            </BrowserRouter>
+            </HashRouter>
           </TooltipProvider>
         </MapsKeyProvider>
       </ApiConfigProvider>
