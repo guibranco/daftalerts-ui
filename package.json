@@ -19,7 +19,7 @@
     "@fontsource/inter": "^5.2.8",
     "@google/genai": "^1.52.0",
     "@googlemaps/markerclusterer": "^2.6.2",
-    "@tailwindcss/vite": "^4.2.4",
+    "@tailwindcss/vite": "^4.3.0",
     "@tanstack/react-query": "^5.100.9",
     "@vis.gl/react-google-maps": "^1.8.3",
     "@vitejs/plugin-react": "^6.0.1",
