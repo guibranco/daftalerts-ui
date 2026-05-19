@@ -37,6 +37,20 @@ DaftAlerts UI provides a modern, fast, and highly customizable interface for man
 - **Maps**: [Google Maps Platform](https://developers.google.com/maps)
 - **State Management**: [TanStack Query](https://tanstack.com/query/latest)
 - **I18n**: [react-i18next](https://react.i18next.com/)
+- **Backend API**: [daftalerts-api](https://github.com/guibranco/daftalerts-api)
+
+---
+
+## 📡 Backend API
+
+This project is a frontend interface and requires the **[DaftAlerts API](https://github.com/guibranco/daftalerts-api)** to function properly. 
+
+The API handles:
+- Fetching and parsing properties from Daft.ie.
+- Managing property status (Inbox, Approved, Recycled).
+- Persistent storage of property data and notes.
+
+You must have the API running and configured in the UI settings for the application to display any data.
 
 ---
 
