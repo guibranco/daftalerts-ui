@@ -1,0 +1,74 @@
+{
+  "common": {
+    "search": "Rechercher...",
+    "refresh": "Actualiser",
+    "settings": "Paramètres",
+    "theme": "Thème",
+    "language": "Langue",
+    "en": "Anglais",
+    "pt": "Portugais",
+    "es": "Espagnol",
+    "it": "Italien",
+    "fr": "Français",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "restore": "Restaurer",
+    "approve": "Approuver",
+    "recycle": "Recycler",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "undo": "Annuler"
+  },
+  "nav": {
+    "inbox": "Boîte de réception",
+    "approved": "Approuvés",
+    "recycled": "Reciclés",
+    "settings": "Paramètres"
+  },
+  "inbox": {
+    "title": "Boîte de réception",
+    "empty": "Votre boîte de réception est vide. Les nouvelles alertes apparaîtront ici automatiquement.",
+    "editFilters": "Modifier les filtres",
+    "preset": "Charger un préréglage",
+    "savePreset": "Enregistrer sous forme de préréglage",
+    "clearFilters": "Effacer les filtres",
+    "movedToApproved": "Déplacé vers Approuvés",
+    "movedToRecyclés": "Déplacé vers Recyclés",
+    "gridView": "Vue en grille",
+    "listView": "Vue en liste"
+  },
+  "filters": {
+    "routingKeys": "Clés de routage",
+    "priceRange": "Fourchette de prix",
+    "beds": "Chambres",
+    "baths": "Salles de bain",
+    "propType": "Type de propriété",
+    "berMin": "BER min",
+    "any": "Tous",
+    "apply": "Appliquer les filtres",
+    "reset": "Réinitialiser",
+    "selectAll": "Tout Dublin"
+  },
+  "property": {
+    "viewDetails": "Voir les détails",
+    "openOnDaft": "Ouvrir sur Daft.ie",
+    "copyEircode": "Copier l'Eircode",
+    "notes": "Notes privées",
+    "notesPlaceholder": "Ajoutez vos notes ici...",
+    "saved": "Enregistré",
+    "received": "Reçu {{time}}",
+    "beds": "Chambres",
+    "baths": "Salles de bain",
+    "type": "Type",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "Préréglages de filtres",
+    "newPreset": "Nouveau préréglage",
+    "default": "Par défaut",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce préréglage ?",
+    "theme": "Apparence",
+    "language": "Préférence de langue"
+  }
+}

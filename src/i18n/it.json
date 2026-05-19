@@ -1,0 +1,74 @@
+{
+  "common": {
+    "search": "Cerca...",
+    "refresh": "Aggiorna",
+    "settings": "Impostazioni",
+    "theme": "Tema",
+    "language": "Lingua",
+    "en": "Inglese",
+    "pt": "Portoghese",
+    "es": "Spagnolo",
+    "it": "Italiano",
+    "fr": "Francese",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "restore": "Ripristina",
+    "approve": "Approva",
+    "recycle": "Ricicla",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "undo": "Annulla"
+  },
+  "nav": {
+    "inbox": "In arrivo",
+    "approved": "Approvati",
+    "recycled": "Riciclati",
+    "settings": "Impostazioni"
+  },
+  "inbox": {
+    "title": "In arrivo",
+    "empty": "La tua casella di posta è vuota. Le nuove notifiche appariranno qui automaticamente.",
+    "editFilters": "Modifica filtri",
+    "preset": "Carica preset",
+    "savePreset": "Salva corrente come preset",
+    "clearFilters": "Cancella filtri",
+    "movedToApproved": "Spostato in Approvati",
+    "movedToRecycled": "Spostato in Riciclati",
+    "gridView": "Vista a griglia",
+    "listView": "Vista a elenco"
+  },
+  "filters": {
+    "routingKeys": "Chiavi di routing",
+    "priceRange": "Intervallo di prezzo",
+    "beds": "Camere",
+    "baths": "Bagni",
+    "propType": "Tipo di proprietà",
+    "berMin": "BER min",
+    "any": "Qualsiasi",
+    "apply": "Applica filtri",
+    "reset": "Ripristina",
+    "selectAll": "Seleziona tutta Dublino"
+  },
+  "property": {
+    "viewDetails": "Visualizza dettagli",
+    "openOnDaft": "Apri su Daft.ie",
+    "copyEircode": "Copia Eircode",
+    "notes": "Note private",
+    "notesPlaceholder": "Aggiungi le tue note qui...",
+    "saved": "Salvato",
+    "received": "Ricevuto {{time}}",
+    "beds": "Camere",
+    "baths": "Bagni",
+    "type": "Tipo",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "Preset filtri",
+    "newPreset": "Nuovo preset",
+    "default": "Predefinito",
+    "deleteConfirm": "Sei sicuro di voler eliminare questo preset?",
+    "theme": "Aspetto",
+    "language": "Preferenza lingua"
+  }
+}

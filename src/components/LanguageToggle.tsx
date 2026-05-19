@@ -27,6 +27,15 @@ export function LanguageToggle() {
         <DropdownMenuItem onClick={() => setLanguage('pt')}>
           {t('common.pt')}
         </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('es')}>
+          {t('common.es')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('it')}>
+          {t('common.it')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('fr')}>
+          {t('common.fr')}
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

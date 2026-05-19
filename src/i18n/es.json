@@ -1,0 +1,74 @@
+{
+  "common": {
+    "search": "Buscar...",
+    "refresh": "Actualizar",
+    "settings": "Ajustes",
+    "theme": "Tema",
+    "language": "Idioma",
+    "en": "Inglés",
+    "pt": "Portugués",
+    "es": "Español",
+    "it": "Italiano",
+    "fr": "Francés",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "restore": "Restaurar",
+    "approve": "Aprobar",
+    "recycle": "Reciclar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "undo": "Deshacer"
+  },
+  "nav": {
+    "inbox": "Bandeja de entrada",
+    "approved": "Aprobados",
+    "recycled": "Reciclados",
+    "settings": "Ajustes"
+  },
+  "inbox": {
+    "title": "Bandeja de entrada",
+    "empty": "Tu bandeja de entrada está vacía. Las nuevas alertas aparecerán aquí automáticamente.",
+    "editFilters": "Editar filtros",
+    "preset": "Cargar ajuste",
+    "savePreset": "Guardar actual como ajuste",
+    "clearFilters": "Limpiar filtros",
+    "movedToApproved": "Movido a Aprobados",
+    "movedToRecycled": "Movido a Reciclados",
+    "gridView": "Vista de cuadrícula",
+    "listView": "Vista de lista"
+  },
+  "filters": {
+    "routingKeys": "Claves de enrutamiento",
+    "priceRange": "Rango de precios",
+    "beds": "Habitaciones",
+    "baths": "Baños",
+    "propType": "Tipo de propiedad",
+    "berMin": "BER mín.",
+    "any": "Cualquiera",
+    "apply": "Aplicar filtros",
+    "reset": "Restablecer",
+    "selectAll": "Seleccionar todo Dublín"
+  },
+  "property": {
+    "viewDetails": "Ver detalles",
+    "openOnDaft": "Abrir en Daft.ie",
+    "copyEircode": "Copiar Eircode",
+    "notes": "Notas privadas",
+    "notesPlaceholder": "Añade tus notas aquí...",
+    "saved": "Guardado",
+    "received": "Recibido {{time}}",
+    "beds": "Habitaciones",
+    "baths": "Baños",
+    "type": "Tipo",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "Ajustes de filtro",
+    "newPreset": "Nuevo ajuste",
+    "default": "Predeterminado",
+    "deleteConfirm": "¿Estás seguro de que quieres eliminar este ajuste?",
+    "theme": "Apariencia",
+    "language": "Preferencia de idioma"
+  }
+}
