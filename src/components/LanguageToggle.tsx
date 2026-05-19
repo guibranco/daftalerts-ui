@@ -21,47 +21,47 @@ export function LanguageToggle() {
         <Globe className="h-5 w-5" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="max-h-[400px] overflow-y-auto">
-        <DropdownMenuItem onClick={() => setLanguage('en')}>
-          {t('common.en')}
+        <DropdownMenuItem onClick={() => setLanguage('en')} className="flex items-center gap-2">
+          <span>🇮🇪</span> {t('common.en')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('pt')}>
-          {t('common.pt')}
+        <DropdownMenuItem onClick={() => setLanguage('pt')} className="flex items-center gap-2">
+          <span>🇵🇹</span> {t('common.pt')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('es')}>
-          {t('common.es')}
+        <DropdownMenuItem onClick={() => setLanguage('es')} className="flex items-center gap-2">
+          <span>🇪🇸</span> {t('common.es')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('it')}>
-          {t('common.it')}
+        <DropdownMenuItem onClick={() => setLanguage('it')} className="flex items-center gap-2">
+          <span>🇮🇹</span> {t('common.it')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('fr')}>
-          {t('common.fr')}
+        <DropdownMenuItem onClick={() => setLanguage('fr')} className="flex items-center gap-2">
+          <span>🇫🇷</span> {t('common.fr')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('de')}>
-          {t('common.de')}
+        <DropdownMenuItem onClick={() => setLanguage('de')} className="flex items-center gap-2">
+          <span>🇩🇪</span> {t('common.de')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('nl')}>
-          {t('common.nl')}
+        <DropdownMenuItem onClick={() => setLanguage('nl')} className="flex items-center gap-2">
+          <span>🇳🇱</span> {t('common.nl')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('ar')}>
-          {t('common.ar')}
+        <DropdownMenuItem onClick={() => setLanguage('ar')} className="flex items-center gap-2">
+          <span>🇸🇦</span> {t('common.ar')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('zh')}>
-          {t('common.zh')}
+        <DropdownMenuItem onClick={() => setLanguage('zh')} className="flex items-center gap-2">
+          <span>🇹🇼</span> {t('common.zh')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('ja')}>
-          {t('common.ja')}
+        <DropdownMenuItem onClick={() => setLanguage('ja')} className="flex items-center gap-2">
+          <span>🇯🇵</span> {t('common.ja')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('ru')}>
-          {t('common.ru')}
+        <DropdownMenuItem onClick={() => setLanguage('ru')} className="flex items-center gap-2">
+          <span>🇷🇺</span> {t('common.ru')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('uk')}>
-          {t('common.uk')}
+        <DropdownMenuItem onClick={() => setLanguage('uk')} className="flex items-center gap-2">
+          <span>🇺🇦</span> {t('common.uk')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('ur')}>
-          {t('common.ur')}
+        <DropdownMenuItem onClick={() => setLanguage('ur')} className="flex items-center gap-2">
+          <span>🇵🇰</span> {t('common.ur')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage('hi')}>
-          {t('common.hi')}
+        <DropdownMenuItem onClick={() => setLanguage('hi')} className="flex items-center gap-2">
+          <span>🇮🇳</span> {t('common.hi')}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
