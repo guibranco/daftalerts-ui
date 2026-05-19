@@ -29,7 +29,7 @@ interface AppShellProps {
 }
 
 export const AppShell: React.FC<AppShellProps> = ({ children }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { data: stats } = useStats();
   const { filters, setFilter } = useFilters();
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
@@ -45,7 +45,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   ];
 
   return (
-    <div className="flex h-screen bg-background text-foreground overflow-hidden">
+    <div className="flex h-screen bg-background text-foreground overflow-hidden" dir={i18n.dir()}>
       {/* Sidebar Desktop */}
       <aside className={cn(
         "hidden md:flex flex-col border-r bg-white transition-all duration-300 ease-in-out dark:bg-card",

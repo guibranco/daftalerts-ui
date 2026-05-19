@@ -1,0 +1,83 @@
+{
+  "common": {
+    "search": "検索...",
+    "refresh": "更新",
+    "settings": "設定",
+    "theme": "テーマ",
+    "language": "言語",
+    "en": "英語",
+    "pt": "ポルトガル語",
+    "es": "スペイン語",
+    "it": "イタリア語",
+    "fr": "フランス語",
+    "ar": "アラビア語",
+    "zh": "繁体中国語",
+    "ja": "日本語",
+    "ru": "ロシア語",
+    "uk": "ウクライナ語",
+    "ur": "ウルドゥー語",
+    "de": "ドイツ語",
+    "nl": "オランダ語",
+    "hi": "ヒンディー語",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "restore": "復元",
+    "approve": "承認",
+    "recycle": "リサイクル",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "undo": "元に戻す"
+  },
+  "nav": {
+    "inbox": "受信トレイ",
+    "approved": "承認済み",
+    "recycled": "ゴミ箱",
+    "settings": "設定"
+  },
+  "inbox": {
+    "title": "受信トレイ",
+    "empty": "受信トレイは空です。新しい通知はここに自動的に表示されます。",
+    "editFilters": "フィルターを編集",
+    "preset": "プリセットを読み込む",
+    "savePreset": "現在をプリセットとして保存",
+    "clearFilters": "フィルターをクリア",
+    "movedToApproved": "承認済みに移動しました",
+    "movedToRecycled": "ゴミ箱に移動しました",
+    "gridView": "グリッド表示",
+    "listView": "リスト表示"
+  },
+  "filters": {
+    "routingKeys": "ルーティングキー",
+    "priceRange": "価格帯",
+    "beds": "寝室",
+    "baths": "浴室",
+    "propType": "物件種別",
+    "berMin": "最低 BER",
+    "any": "指定なし",
+    "apply": "フィルターを適用",
+    "reset": "リセット",
+    "selectAll": "ダブリン全域を選択"
+  },
+  "property": {
+    "viewDetails": "詳細を見る",
+    "openOnDaft": "Daft.ie で開く",
+    "copyEircode": "Eircode をコピー",
+    "notes": "プライベートメモ",
+    "notesPlaceholder": "ここにメモを追加...",
+    "saved": "保存済み",
+    "received": "{{time}} に受信",
+    "beds": "寝室",
+    "baths": "浴室",
+    "type": "種別",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "フィルタープリセット",
+    "newPreset": "新規プリセット",
+    "default": "デフォルト",
+    "deleteConfirm": "このプリセットを削除してもよろしいですか？",
+    "theme": "外観",
+    "language": "言語設定"
+  }
+}

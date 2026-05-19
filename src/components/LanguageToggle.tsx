@@ -20,7 +20,7 @@ export function LanguageToggle() {
       <DropdownMenuTrigger render={<Button variant="ghost" size="icon" title={t('common.language')} />}>
         <Globe className="h-5 w-5" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="max-h-[400px] overflow-y-auto">
         <DropdownMenuItem onClick={() => setLanguage('en')}>
           {t('common.en')}
         </DropdownMenuItem>
@@ -35,6 +35,33 @@ export function LanguageToggle() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setLanguage('fr')}>
           {t('common.fr')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('de')}>
+          {t('common.de')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('nl')}>
+          {t('common.nl')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('ar')}>
+          {t('common.ar')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('zh')}>
+          {t('common.zh')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('ja')}>
+          {t('common.ja')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('ru')}>
+          {t('common.ru')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('uk')}>
+          {t('common.uk')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('ur')}>
+          {t('common.ur')}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setLanguage('hi')}>
+          {t('common.hi')}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

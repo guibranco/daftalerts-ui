@@ -1,7 +1,7 @@
 # 🏡 DaftAlerts UI 🚀
 
-[![Build and Test](https://github.com/guilherme-stracini/daftalerts-ui/actions/workflows/build.yml/badge.svg)](https://github.com/guilherme-stracini/daftalerts-ui/actions/workflows/build.yml)
-[![Deploy GH Pages](https://github.com/guilherme-stracini/daftalerts-ui/actions/workflows/deploy.yml/badge.svg)](https://github.com/guilherme-stracini/daftalerts-ui/actions/workflows/deploy.yml)
+[![Build and Test](https://github.com/guibranco/daftalerts-ui/actions/workflows/build.yml/badge.svg)](https://github.com/guibranco/daftalerts-ui/actions/workflows/build.yml)
+[![Deploy GH Pages](https://github.com/guibranco/daftalerts-ui/actions/workflows/deploy.yml/badge.svg)](https://github.com/guibranco/daftalerts-ui/actions/workflows/deploy.yml)
 
 **Your Daft.ie inbox, organized and supercharged.** 🇮🇪
 
@@ -46,7 +46,7 @@ DaftAlerts UI provides a modern, fast, and highly customizable interface for man
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/guilherme-stracini/daftalerts-ui.git
+   git clone https://github.com/guibranco/daftalerts-ui.git
    cd daftalerts-ui
    ```
 

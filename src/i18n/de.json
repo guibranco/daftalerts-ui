@@ -1,0 +1,83 @@
+{
+  "common": {
+    "search": "Suchen...",
+    "refresh": "Aktualisieren",
+    "settings": "Einstellungen",
+    "theme": "Design",
+    "language": "Sprache",
+    "en": "Englisch",
+    "pt": "Portugiesisch",
+    "es": "Spanisch",
+    "it": "Italienisch",
+    "fr": "Französisch",
+    "ar": "Arabisch",
+    "zh": "Traditionelles Chinesisch",
+    "ja": "Japanisch",
+    "ru": "Russisch",
+    "uk": "Ukrainisch",
+    "ur": "Urdu",
+    "de": "Deutsch",
+    "nl": "Niederländisch",
+    "hi": "Hindi",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "restore": "Wiederherstellen",
+    "approve": "Genehmigen",
+    "recycle": "Recyceln",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "undo": "Rückgängig"
+  },
+  "nav": {
+    "inbox": "Posteingang",
+    "approved": "Genehmigt",
+    "recycled": "Recycelt",
+    "settings": "Einstellungen"
+  },
+  "inbox": {
+    "title": "Posteingang",
+    "empty": "Ihr Posteingang ist leer. Neue Warnungen werden hier automatisch angezeigt.",
+    "editFilters": "Filter bearbeiten",
+    "preset": "Preset laden",
+    "savePreset": "Aktuelles als Preset speichern",
+    "clearFilters": "Filter löschen",
+    "movedToApproved": "Zu Genehmigt verschoben",
+    "movedToRecycled": "Zu Recycelt verschoben",
+    "gridView": "Gitteransicht",
+    "listView": "Listenansicht"
+  },
+  "filters": {
+    "routingKeys": "Routing-Keys",
+    "priceRange": "Preisspanne",
+    "beds": "Schlafzimmer",
+    "baths": "Badezimmer",
+    "propType": "Immobilientyp",
+    "berMin": "Min. BER",
+    "any": "Alle",
+    "apply": "Filter anwenden",
+    "reset": "Zurücksetzen",
+    "selectAll": "Ganz Dublin auswählen"
+  },
+  "property": {
+    "viewDetails": "Details anzeigen",
+    "openOnDaft": "Auf Daft.ie öffnen",
+    "copyEircode": "Eircode kopieren",
+    "notes": "Private Notizen",
+    "notesPlaceholder": "Ihre Notizen hier hinzufügen...",
+    "saved": "Gespeichert",
+    "received": "Empfangen {{time}}",
+    "beds": "Zi.",
+    "baths": "Bad",
+    "type": "Typ",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "Filter-Presets",
+    "newPreset": "Neues Preset",
+    "default": "Standard",
+    "deleteConfirm": "Sind Sie sicher, dass Sie dieses Preset löschen möchten?",
+    "theme": "Erscheinungsbild",
+    "language": "Spracheinstellungen"
+  }
+}

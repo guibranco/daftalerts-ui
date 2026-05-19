@@ -1,0 +1,83 @@
+{
+  "common": {
+    "search": "搜尋...",
+    "refresh": "整理",
+    "settings": "設定",
+    "theme": "主題",
+    "language": "語言",
+    "en": "英文",
+    "pt": "葡萄牙文",
+    "es": "西班牙文",
+    "it": "義大利文",
+    "fr": "法文",
+    "ar": "阿拉伯文",
+    "zh": "繁體中文",
+    "ja": "日文",
+    "ru": "俄文",
+    "uk": "烏克蘭文",
+    "ur": "烏爾都文",
+    "de": "德文",
+    "nl": "荷蘭文",
+    "hi": "印地文",
+    "save": "儲存",
+    "cancel": "取消",
+    "delete": "刪除",
+    "restore": "還原",
+    "approve": "核准",
+    "recycle": "回收",
+    "loading": "載入中...",
+    "error": "錯誤",
+    "undo": "復原"
+  },
+  "nav": {
+    "inbox": "收件箱",
+    "approved": "已核准",
+    "recycled": "回收箱",
+    "settings": "設定"
+  },
+  "inbox": {
+    "title": "收件箱",
+    "empty": "您的收件箱是空的。新提醒將自動顯示在此處。",
+    "editFilters": "編輯篩選條件",
+    "preset": "載入預設",
+    "savePreset": "儲存目前為預設",
+    "clearFilters": "清除篩選條件",
+    "movedToApproved": "已移至已核准",
+    "movedToRecycled": "已移至回收箱",
+    "gridView": "網格視圖",
+    "listView": "列表視圖"
+  },
+  "filters": {
+    "routingKeys": "路由鍵",
+    "priceRange": "價格範圍",
+    "beds": "臥室",
+    "baths": "浴室",
+    "propType": "物業類型",
+    "berMin": "最低 BER",
+    "any": "任何",
+    "apply": "應用篩選條件",
+    "reset": "重設",
+    "selectAll": "選擇都柏林所有地區"
+  },
+  "property": {
+    "viewDetails": "查看詳情",
+    "openOnDaft": "在 Daft.ie 開啟",
+    "copyEircode": "複製 Eircode",
+    "notes": "私人筆記",
+    "notesPlaceholder": "在此添加您的筆記...",
+    "saved": "已儲存",
+    "received": "已收到 {{time}}",
+    "beds": "臥室",
+    "baths": "浴室",
+    "type": "類型",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "篩選預設",
+    "newPreset": "新預設",
+    "default": "預設",
+    "deleteConfirm": "您確定要刪除此預設嗎？",
+    "theme": "外觀",
+    "language": "語言偏好"
+  }
+}

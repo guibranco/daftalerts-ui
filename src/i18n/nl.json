@@ -1,0 +1,83 @@
+{
+  "common": {
+    "search": "Zoeken...",
+    "refresh": "Vernieuwen",
+    "settings": "Instellingen",
+    "theme": "Thema",
+    "language": "Taal",
+    "en": "Engels",
+    "pt": "Portugees",
+    "es": "Spaans",
+    "it": "Italiaans",
+    "fr": "Frans",
+    "ar": "Arabisch",
+    "zh": "Traditioneel Chinees",
+    "ja": "Japans",
+    "ru": "Russisch",
+    "uk": "Oekraïens",
+    "ur": "Urdu",
+    "de": "Duits",
+    "nl": "Nederlands",
+    "hi": "Hindi",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "restore": "Herstellen",
+    "approve": "Goedkeuren",
+    "recycle": "Recyclen",
+    "loading": "Laden...",
+    "error": "Fout",
+    "undo": "Ongedaan maken"
+  },
+  "nav": {
+    "inbox": "Inbox",
+    "approved": "Goedgekeurd",
+    "recycled": "Prullenbak",
+    "settings": "Instellingen"
+  },
+  "inbox": {
+    "title": "Inbox",
+    "empty": "Je inbox is leeg. Nieuwe meldingen verschijnen hier automatisch.",
+    "editFilters": "Filters bewerken",
+    "preset": "Preset laden",
+    "savePreset": "Huidige opslaan als preset",
+    "clearFilters": "Filters wissen",
+    "movedToApproved": "Verplaatst naar Goedgekeurd",
+    "movedToRecycled": "Verplaatst naar Prullenbak",
+    "gridView": "Rasterweergave",
+    "listView": "Lijstweergave"
+  },
+  "filters": {
+    "routingKeys": "Routing-sleutels",
+    "priceRange": "Prijsbereik",
+    "beds": "Slaapkamers",
+    "baths": "Badkamers",
+    "propType": "Woningtype",
+    "berMin": "Min. BER",
+    "any": "Alle",
+    "apply": "Filters toepassen",
+    "reset": "Resetten",
+    "selectAll": "Heel Dublin selecteren"
+  },
+  "property": {
+    "viewDetails": "Details bekijken",
+    "openOnDaft": "Openen op Daft.ie",
+    "copyEircode": "Eircode kopiëren",
+    "notes": "Privé-notities",
+    "notesPlaceholder": "Voeg je notities hier toe...",
+    "saved": "Opgeslagen",
+    "received": "Ontvangen {{time}}",
+    "beds": "Slpk.",
+    "baths": "Badk.",
+    "type": "Type",
+    "ber": "BER"
+  },
+  "settings": {
+    "presets": "Filter-presets",
+    "newPreset": "Nieuwe preset",
+    "default": "Standaard",
+    "deleteConfirm": "Weet je zeker dat je deze preset wilt verwijderen?",
+    "theme": "Uiterlijk",
+    "language": "Taalvoorkeur"
+  }
+}
