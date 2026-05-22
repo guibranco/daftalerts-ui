@@ -30,7 +30,7 @@
     "express": "^5.2.1",
     "i18next": "^26.2.0",
     "lucide-react": "^1.16.0",
-    "motion": "^12.39.0",
+    "motion": "^12.40.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-i18next": "^17.0.8",
