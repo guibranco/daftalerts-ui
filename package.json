@@ -33,7 +33,7 @@
     "motion": "^14.6.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "react-i18next": "^17.1.8",
+    "react-i18next": "^17.1.9",
     "react-router-dom": "^7.18.4",
     "shadcn": "^4.22.1",
     "sonner": "^2.0.8",
